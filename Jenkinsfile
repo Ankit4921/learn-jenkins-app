@@ -24,7 +24,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    cd build| ls -la | grep 'index.html'
+                    cd build && ls -la | grep 'index.html'
 
 
                 '''
