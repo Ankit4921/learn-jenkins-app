@@ -37,12 +37,10 @@
       "last 1 safari version"
     ]
   },
- {
   "devDependencies": {
     "@playwright/test": "^1.54.2",
     "@types/node": "^20.8.6",
-    "jest-html-reporter": "^4.3.0",
-    "jest-junit": "^16.0.0"
+    "jest-html-reporter": "^4.3.0"
   },
   "jest-junit": {
     "suiteName": "jest tests",
@@ -53,20 +51,5 @@
     "titleTemplate": "{classname}-{title}",
     "ancestorSeparator": " › ",
     "usePathForSuiteName": "true"
-  },
-  "jest": {
-    "reporters": [
-      "default",
-      ["jest-junit", {
-        "outputDirectory": "jest-results",
-        "outputName": "junit.xml"
-      }],
-      ["jest-html-reporter", {
-        "pageTitle": "Test Report",
-        "outputPath": "jest-results/test-report.html",
-        "includeFailureMsg": true,
-        "includeConsoleLog": true
-      }]
-    ]
   }
 }
